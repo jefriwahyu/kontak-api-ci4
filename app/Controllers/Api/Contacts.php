@@ -113,6 +113,6 @@ class Contacts extends ResourceController
             $url = base_url('uploads/' . $newName);
             return $this->respond(['success' => true, 'url' => $url], 200);
         }
-        return $this->fail('Gagal mengupload file.', 400);
+        return $this->fail('Gagal mengupload file .', 400);
     }
 }
