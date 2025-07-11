@@ -1,0 +1,13 @@
+[08-Jul-2025 15:58:40 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function opcache_reset() in /home4/tin43147/kontak-api.tinagers.com/public/clear_cache.php:2
+Stack trace:
+#0 {main}
+  thrown in /home4/tin43147/kontak-api.tinagers.com/public/clear_cache.php on line 2
+[08-Jul-2025 15:59:01 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function opcache_reset() in /home4/tin43147/kontak-api.tinagers.com/public/clear_cache.php:2
+Stack trace:
+#0 {main}
+  thrown in /home4/tin43147/kontak-api.tinagers.com/public/clear_cache.php on line 2
+[08-Jul-2025 15:59:24 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function opcache_reset() in /home4/tin43147/kontak-api.tinagers.com/public/clear_cache.php:2
+Stack trace:
+#0 {main}
+  thrown in /home4/tin43147/kontak-api.tinagers.com/public/clear_cache.php on line 2
+[08-Jul-2025 09:03:15 UTC] PHP Fatal error:  Cannot declare class App\Models\ContactModel, because the name is already in use in /home4/tin43147/kontak-api.tinagers.com/app/Models/ContactModel2.php on line 9

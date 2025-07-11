@@ -1,0 +1,4 @@
+# TAMBAHKAN BLOK INI DI PALING ATAS
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
