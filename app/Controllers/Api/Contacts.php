@@ -15,7 +15,7 @@ class Contacts extends ResourceController
         $data = $model->findAll();
         $response = [
             'success' => true,
-            'message' => 'Semua data kontak berhasil diambil.',
+            'message' => 'Semua data kontak berhasil diambil .',
             'count'   => count($data),
             'data'    => $data
         ];
