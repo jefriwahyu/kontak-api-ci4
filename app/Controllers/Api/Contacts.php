@@ -115,4 +115,35 @@ class Contacts extends ResourceController
         }
         return $this->fail('Gagal mengupload file .', 400);
     }
+
+    public function toggleFavorite($id = null)
+    {
+        // Cari kontak berdasarkan ID
+        $contact = $this->model->find($id);
+
+        if ($contact) {
+            // Ubah status is_favorite (jika true jadi false, jika false jadi true)
+            $newStatus = !$contact['is_favorite'];
+            
+            $data = [
+                'is_favorite' => $newStatus,
+            ];
+
+            // Lakukan update
+            $this->model->update($id, $data);
+            
+            // Beri respons sukses
+            return $this->respond([
+                'status' => 200,
+                'message' => 'Status favorit berhasil diubah.',
+                'data' => [
+                    'id' => $id,
+                    'is_favorite' => $newStatus
+                ]
+            ]);
+
+        } else {
+            return $this->failNotFound('Kontak tidak ditemukan.');
+        }
+    }
 }

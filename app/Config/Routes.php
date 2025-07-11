@@ -13,4 +13,5 @@ use CodeIgniter\Router\RouteCollection;
     $routes->group('api', function ($routes) {
         $routes->resource('kontak', ['controller' => 'Api\Contacts']);
         $routes->post('upload', 'Api\Contacts::upload');
+        $routes->patch('contacts/favorite/(:num)', 'Api\Contacts::toggleFavorite/$1');
     });
